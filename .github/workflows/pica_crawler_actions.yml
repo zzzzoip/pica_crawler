@@ -2,8 +2,8 @@ name: pica_crawler
 
 on:
   #将下面两行代码取消注释
-  #schedule:
-    #- cron: "0 0 * * *"
+  schedule:
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -65,7 +65,7 @@ jobs:
       - name: commit & push
         uses: actions-go/push@master
         with:
-          author-email: 'actions@github.com'
-          author-name: 'GitHub Actions'
+          author-email: '995055021@qq.com'
+          author-name: 'cs'
           commit-message: 'update downloaded comics'
           token: ${{ secrets.GIT_TOKEN }}
